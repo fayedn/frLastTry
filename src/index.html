@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 - Scroll base animation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="scene-container"></div>
+    <div class="title">
+        <h1>Jerica will you be my valentine?</h1>
+    </div>
+    <button id="yesButton" class="button-1" role="button">Yes</button>
+    <button id="noButton" class="button-1" role="button">No</button>
+
+    <!-- Other content -->
+
+    <script>
+        document.getElementById('noButton').addEventListener('click', function () {
+            this.textContent = '🤡';
+            this.id = "yesButton"
+            alert('Ur goofy')
+        });
+        document.getElementById('yesButton').addEventListener('click', function () {
+            window.location.href = 'yes.html';
+        });
+    </script>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

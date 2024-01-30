@@ -21,7 +21,7 @@ let heartModel;
 
 // Load a glTF resource
 loader.load(
-  'heart.glb', // Replace 'path/to/heart.glb' with the path to your model
+  './heart.glb', // Replace 'path/to/heart.glb' with the path to your model
   function (gltf) {
     // Called when the resource is loaded
     heartModel = gltf.scene;
